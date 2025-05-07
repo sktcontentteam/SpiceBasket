@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpiceBasket - Indian Grocery Online</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f9f4;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #357a38;
+  color: #fff;
+  padding: 10px 20px;
+}
+.topbar .logo {
+  font-size: 22px;
+}
+.topbar nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.cart {
+  font-size: 14px;
+}
+
+/* Hero */
+.hero img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #e2f0d9;
+  padding: 20px;
+  border-radius: 5px;
+}
+.sidebar h3 {
+  margin-bottom: 15px;
+  color: #2f5e2f;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.login-box {
+  margin-top: 20px;
+}
+.login-box h4 {
+  margin-bottom: 10px;
+}
+.login-box input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+.login-box button {
+  width: 100%;
+  padding: 8px;
+  background: #357a38;
+  color: white;
+  border: none;
+}
+
+/* Products */
+.products {
+  flex: 1;
+  padding-left: 20px;
+}
+.products h2 {
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 80px;
+  /* background-color: blue; */
+}
+.product-card {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+.product-card img {
+  width: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.product-card p {
+  margin: 5px 0;
+}
+.product-card del {
+  color: #999;
+}
+.product-card button {
+  background: #388e3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <header class="topbar">
+    <div class="logo">🌿 <strong>Spice</strong>Basket</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Customer Support</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="cart">🛒 Cart: 3 items | ₹0.00</div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh Groceries" />
+  </section>
+
+  <main class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Product Categories</h3>
+      <ul>
+        <li>Breakfast & Cereal</li>
+        <li>Bakery & Bread</li>
+        <li>Canned Goods</li>
+        <li>Coffee & Tea</li>
+        <li>Sauces & Spices</li>
+        <li>Fresh Food</li>
+        <li>Frozen Food</li>
+        <li>Dairy & Cheese</li>
+        <li>Snacks & Sweets</li>
+        <li>Grains & Pasta</li>
+      </ul>
+
+      <div class="login-box">
+        <h4>Quick Login</h4>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <section class="products">
+      <h2>Welcome to SpiceBasket Grocery Store</h2>
+      <div class="grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1591274603033-b63d98dd3b2e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product" />
+          <p>Baking Mix</p>
+          <p><del>₹180.00</del> <strong>₹150.00</strong></p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1741521641159-41f82f656f75?q=80&w=2141&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product" />
+          <p>Healthy Choice Cereal</p>
+          <p><del>₹160.00</del> <strong>₹150.00</strong></p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1676885662779-a2ebd533547a?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0" alt="Product" />
+          <p>Oats & Granola</p>
+          <p><del>₹170.00</del> <strong>₹150.00</strong></p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1630314902992-b32bb58d0dc6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product" />
+          <p>Organic Muesli</p>
+          <p><del>₹180.00</del> <strong>₹150.00</strong></p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
